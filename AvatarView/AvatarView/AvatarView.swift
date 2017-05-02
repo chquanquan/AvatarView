@@ -6,6 +6,12 @@
 //  Copyright © 2017年 chq.Co.Ltd. All rights reserved.
 //
 
+
+/*谢谢你使用
+https://github.com/chquanquan/AvatarView
+你的支持就是我的动力,让我们做为IOS开发者共同进步,^_^       */
+
+
 import UIKit
 
 /**********关于占位头像的选择, 我觉得最好不用使用者每次创建控件的时候指定(而且需求也不一样),而应该由bundle指定,重新给类属性placeholderImageString赋值即可**********/
@@ -27,9 +33,9 @@ let defaultAvatarPath: String = {
 
 let avatarImageViewTag = 78886
 
-
+//实现这三个代理方法
 protocol AvatarViewDelegate: class {
-    func customAction(avatarView: AvatarView)  //触发自定义行为
+    func customAction(avatarView: AvatarView)  //自定义行为
     func setImageCompletion(avatarView: AvatarView, imageData: Data) //设定头像完成
     func loadImageFailure(avatarView: AvatarView, url: String)  //加载网络头像失败
 }
@@ -52,7 +58,7 @@ enum AvatarImageType {
 
 class AvatarView: UIView {
     
-    static var showAvatarLog = true //是否打印日志,发布版时,不会编译Log
+    static var showAvatarLog = false //是否打印日志,发布版时,不会编译Log
     static var placeholderImageString = "pld2"  //为占位图片重新赋值为的图片名称
     static var avatarPath: String = defaultAvatarPath //图片保存路径
     
