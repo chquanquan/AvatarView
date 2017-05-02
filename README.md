@@ -5,12 +5,10 @@ easy to use! 简单易用,功能全面,高度自定义的头像插件
 于是就把自己散落在不同controller上的代码集合里来,封装了一个头像控件...
 用Swift 3 编写
 
-[GitHub:AvatarView](https://github.com/chquanquan/AvatarView)
 
 没有复杂的逻辑,只有自己平常对功能的理解.
 
 实现的功能包括:
-
 1. 相机或相册选取头像,完成后通过代理可上传到服务器.
 2. 通过URL异步加载头像.
 3. 头像持久化存储.
